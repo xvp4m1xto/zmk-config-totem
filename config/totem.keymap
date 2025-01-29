@@ -82,6 +82,11 @@
             bindings = <&caps_word>;
             key-positions = <15 19>;
         };
+
+        CTRL_ALT_DEL {
+            bindings = <&kp LC(LA(DELETE))>;
+            key-positions = <36 37 35>;
+        };
     };
 
     keymap {
