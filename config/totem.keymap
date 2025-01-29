@@ -120,10 +120,10 @@
 
         NavFN {
             bindings = <
-                 &mt LC(HOME) HOME  &mt LC(PG_UP) PG_UP  &mt LC(UP_ARROW) UP_ARROW  &mt LC(PAGE_DOWN) PAGE_DOWN  &mt LC(END) END        &kp F1               &kp F2     &kp F3     &kp F4               &mt LS(F5) F5
-                 &kp LC(A)          &mt LC(LEFT) LEFT    &mt LC(DOWN) DOWN          &mt LC(RIGHT_ARROW) RIGHT    &kp LC(Y)              &mt LS(F6) F6        &kp F7     &kp F8     &kp F9               &kp F10
-&kp PRINTSCREEN  &kp LC(Z)          &mt LC(LS(X)) LC(X)  &kp LC(C)                  &kp ENTER                    &mt LC(LS(V)) LC(V)    &mt LC(LS(V)) LC(V)  &kp ENTER  &kp LC(C)  &mt LS(LC(X)) LC(X)  &mt LS(F12) F12  &mt PRINTSCREEN F11
-                                                         &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans                 &trans               &trans     &trans
+                 &mt LC(HOME) HOME  &mt LC(PG_UP) PG_UP  &mt LC(UP_ARROW) UP_ARROW  &mt LC(PAGE_DOWN) PAGE_DOWN  &mt LC(END) END        &kp F1               &kp F2               &kp F3     &kp F4               &mt LS(F5) F5
+                 &kp LC(A)          &mt LC(LEFT) LEFT    &mt LC(DOWN) DOWN          &mt LC(RIGHT_ARROW) RIGHT    &kp LC(Y)              &mt LS(F6) F6        &kp F7               &kp F8     &kp F9               &kp F10
+&kp PRINTSCREEN  &kp LC(Z)          &mt LC(LS(X)) LC(X)  &kp LC(C)                  &mt LS(ENTER) ENTER          &mt LC(LS(V)) LC(V)    &mt LC(LS(V)) LC(V)  &mt LA(ENTER) ENTER  &kp LC(C)  &mt LS(LC(X)) LC(X)  &mt LS(F12) F12  &mt PRINTSCREEN F11
+                                                         &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans                 &trans               &trans               &trans
             >;
         };
 
