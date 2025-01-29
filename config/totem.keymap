@@ -109,7 +109,7 @@
                      &kp Q  &kp W           &kp F             &kp P        &kp B        &kp J          &kp L                 &kp U                    &kp Y    &kp SEMICOLON
                      &kp A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LCTRL T  &kp G        &kp M          &mt RCTRL N           &kp E                    &kp I    &kp O
 &mt LEFT_GUI ESCAPE  &kp Z  &kp X           &kp C             &kp D        &kp V        &kp K          &kp H                 &kp COMMA                &kp DOT  &kp MINUS      &mt RIGHT_GUI SLASH
-                                            &lt 1 BACKSPACE   &lt 2 SPACE  &lt 1 TAB    &mt RCTRL TAB  &mt LEFT_SHIFT SPACE  &mt RIGHT_ALT BACKSPACE
+                                            &lt 3 BACKSPACE   &lt 2 SPACE  &lt 1 TAB    &mt RCTRL TAB  &mt LEFT_SHIFT SPACE  &mt RIGHT_ALT BACKSPACE
             >;
         };
 
