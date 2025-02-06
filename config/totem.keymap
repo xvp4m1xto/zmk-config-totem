@@ -87,6 +87,11 @@
             bindings = <&kp LC(LA(DELETE))>;
             key-positions = <36 37 35>;
         };
+
+        Text_extractor_Power_Toys {
+            bindings = <&kp LG(LS(E))>;
+            key-positions = <13 12 11>;
+        };
     };
 
     keymap {
