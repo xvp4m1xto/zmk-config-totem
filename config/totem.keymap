@@ -33,64 +33,94 @@
     combos {
         compatible = "zmk,combos";
 
-        L0Ent {
-            bindings = <&kp ENTER>;
-            key-positions = <24 23>;
-        };
-
-        L0Space {
-            bindings = <&kp SPACE>;
-            key-positions = <24 22>;
-        };
-
-        L0Backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <24 21>;
-        };
-
-        L0Del {
+        LDel {
             bindings = <&kp DELETE>;
-            key-positions = <25 24>;
+            key-positions = <23 24>;
         };
 
-        R0Ent {
+        LCtrlDel {
+            bindings = <&kp LC(DELETE)>;
+            key-positions = <22 23 24>;
+        };
+
+        LSpace {
+            bindings = <&kp SPACE>;
+            key-positions = <23 22>;
+        };
+
+        LCtrlBackspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <23 22 21>;
+        };
+
+        LEnter {
             bindings = <&kp ENTER>;
+            key-positions = <21 24>;
+        };
+
+        Text_extract {
+            bindings = <&kp LG(LS(E))>;
+            key-positions = <3 2 1>;
+        };
+
+        Ctrl+Alt+Del {
+            bindings = <&kp LC(LA(DELETE))>;
+            key-positions = <35 36 37>;
+        };
+
+        LCapsword {
+            bindings = <&caps_word>;
+            key-positions = <10 13>;
+        };
+
+        RCapsword {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
+
+        RDel {
+            bindings = <&kp DELETE>;
             key-positions = <27 28>;
         };
 
-        R0Space {
-            bindings = <&kp SPACE>;
-            key-positions = <27 29>;
+        RCtrlDel {
+            bindings = <&kp LC(DELETE)>;
+            key-positions = <27 28 29>;
         };
 
-        R0Backspace {
+        RSpace {
+            bindings = <&kp SPACE>;
+            key-positions = <28 29>;
+        };
+
+        LBackspace {
             bindings = <&kp BACKSPACE>;
+            key-positions = <22 21>;
+        };
+
+        RBackspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <29 30>;
+        };
+
+        RCtrlBackspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <29 30 28>;
+        };
+
+        REnter {
+            bindings = <&kp ENTER>;
             key-positions = <27 30>;
         };
 
-        R0Del {
-            bindings = <&kp DELETE>;
-            key-positions = <27 26>;
+        LAltEnter {
+            bindings = <&kp LA(ENTER)>;
+            key-positions = <24 23 22 21>;
         };
 
-        L0Capsword {
-            bindings = <&caps_word>;
-            key-positions = <10 14>;
-        };
-
-        R0Capsword {
-            bindings = <&caps_word>;
-            key-positions = <15 19>;
-        };
-
-        CTRL_ALT_DEL {
-            bindings = <&kp LC(LA(DELETE))>;
-            key-positions = <36 37 35>;
-        };
-
-        Text_extractor_Power_Toys {
-            bindings = <&kp LG(LS(E))>;
-            key-positions = <13 12 11>;
+        RAltEnter {
+            bindings = <&kp LA(ENTER)>;
+            key-positions = <24 23 22 21 27 28 29 30>;
         };
     };
 
@@ -116,10 +146,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &kp Q  &kp W           &kp F             &kp P        &kp B        &kp J          &kp L                 &kp U                    &kp Y    &kp SEMICOLON
-                     &kp A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LCTRL T  &kp G        &kp M          &mt RCTRL N           &kp E                    &kp I    &kp O
-&mt LEFT_GUI ESCAPE  &kp Z  &kp X           &kp C             &kp D        &kp V        &kp K          &kp H                 &kp COMMA                &kp DOT  &kp MINUS      &mt RIGHT_GUI SLASH
-                                            &lt 3 BACKSPACE   &lt 2 SPACE  &lt 1 TAB    &mt RCTRL TAB  &mt LEFT_SHIFT SPACE  &mt RIGHT_ALT BACKSPACE
+                     &kp Q  &kp W           &kp F             &kp P        &kp B        &kp J          &kp L                 &kp U                 &kp Y    &kp SEMICOLON
+                     &kp A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LCTRL T  &kp G        &kp M          &mt RCTRL N           &kp E                 &kp I    &kp O
+&mt LEFT_GUI ESCAPE  &kp Z  &kp X           &kp C             &kp D        &kp V        &kp K          &kp H                 &kp COMMA             &kp DOT  &kp MINUS      &mt RIGHT_GUI SLASH
+                                            &lt 3 BACKSPACE   &lt 2 SPACE  &lt 1 TAB    &mt RCTRL TAB  &mt LEFT_SHIFT SPACE  &mt RIGHT_ALT DELETE
             >;
         };
 
