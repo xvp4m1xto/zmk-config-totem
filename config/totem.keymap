@@ -144,6 +144,15 @@
         };
     };
 
+    behaviors {
+        TD_Enter: TD_Enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ENTER";
+            #binding-cells = <0>;
+            bindings = <&mt LS(ENTER) ENTER>, <&mt LC(ENTER) LA(ENTER)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -175,10 +184,10 @@
 
         NavFN {
             bindings = <
-                 &mt LC(HOME) HOME  &mt LC(PG_UP) PG_UP  &mt LS(UP_ARROW) UP_ARROW  &mt LC(PAGE_DOWN) PAGE_DOWN  &mt LC(END) END        &kp F1               &kp F2               &kp F3     &kp F4               &mt LS(F5) F5
-                 &kp LC(A)          &mt LS(LEFT) LEFT    &mt LS(DOWN) DOWN          &mt LS(RIGHT_ARROW) RIGHT    &kp LC(Y)              &mt LS(F6) F6        &kp F7               &kp F8     &kp F9               &kp F10
-&kp PRINTSCREEN  &kp LC(Z)          &mt LC(LS(X)) LC(X)  &kp LC(C)                  &mt LS(ENTER) ENTER          &mt LC(LS(V)) LC(V)    &mt LC(LS(V)) LC(V)  &mt LS(ENTER) ENTER  &kp LC(C)  &mt LS(LC(X)) LC(X)  &mt LS(F12) F12  &mt RMETA F11
-                                                         &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans                 &trans               &trans               &trans
+                 &mt LC(HOME) HOME  &mt LC(PG_UP) PG_UP  &mt LS(UP_ARROW) UP_ARROW  &mt LC(PAGE_DOWN) PAGE_DOWN  &mt LC(END) END        &kp F1               &kp F2     &kp F3     &kp F4               &mt LS(F5) F5
+                 &kp LC(A)          &mt LS(LEFT) LEFT    &mt LS(DOWN) DOWN          &mt LS(RIGHT_ARROW) RIGHT    &kp LC(Y)              &mt LS(F6) F6        &kp F7     &kp F8     &kp F9               &kp F10
+&kp PRINTSCREEN  &kp LC(Z)          &mt LC(LS(X)) LC(X)  &kp LC(C)                  &TD_Enter                    &mt LC(LS(V)) LC(V)    &mt LC(LS(V)) LC(V)  &TD_Enter  &kp LC(C)  &mt LS(LC(X)) LC(X)  &mt LS(F12) F12  &mt RMETA F11
+                                                         &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans                 &trans               &trans     &trans
             >;
         };
 
