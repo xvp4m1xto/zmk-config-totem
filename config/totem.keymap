@@ -205,17 +205,17 @@
             bindings = <
                      &kp Q       &kp W                &kp E                  &kp R             &kp T        &kp Y          &kp U                 &kp I                    &kp O                  &kp P
                      &kp A       &LeftHMR LEFT_ALT S  &LeftHMR LEFT_SHIFT D  &LeftHMR LCTRL F  &kp G        &kp H          &RightHRM RCTRL J     &RightHRM RIGHT_SHIFT K  &RightHRM RIGHT_ALT L  &kp SEMICOLON
-&mt LEFT_GUI ESCAPE  &mt LEFT Z  &mt UP_ARROW X       &mt DOWN C             &mt RIGHT V       &kp B        &kp N          &mt LEFT M            &mt DOWN COMMA           &mt UP_ARROW DOT       &mt RIGHT SLASH  &mt RALT APOS
+&mt LEFT_GUI K_BACK  &mt LEFT Z  &mt UP_ARROW X       &mt DOWN C             &mt RIGHT V       &kp B        &kp N          &mt LEFT M            &mt DOWN COMMA           &mt UP_ARROW DOT       &mt RIGHT SLASH  &mt RALT APOS
                                                       &lt 3 BACKSPACE        &lt 2 SPACE       &lt 1 TAB    &mt RCTRL TAB  &mt LEFT_SHIFT SPACE  &mt RIGHT_ALT DELETE
             >;
         };
 
         NavFN {
             bindings = <
-                 &mt LC(HOME) HOME  &mt LC(PG_UP) PG_UP  &mt LS(UP_ARROW) UP_ARROW  &mt LC(PAGE_DOWN) PAGE_DOWN  &mt LC(END) END        &none     &kp F7  &kp F8  &kp F9  &kp F12
-                 &kp LC(A)          &mt LS(LEFT) LEFT    &mt LS(DOWN) DOWN          &mt LS(RIGHT_ARROW) RIGHT    &kp LC(Y)              &none     &kp F4  &kp F5  &kp F6  &kp F11
-&kp PRINTSCREEN  &kp LC(Z)          &mt LC(LS(X)) LC(X)  &kp LC(C)                  &mt LS(LC(V)) LC(V)          &mt LC(LS(V)) LC(V)    &kp LALT  &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                                         &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans                 &trans    &trans  &trans
+                        &mt LC(HOME) HOME  &mt LC(PG_UP) PG_UP  &mt LS(UP_ARROW) UP_ARROW  &mt LC(PAGE_DOWN) PAGE_DOWN  &mt LC(END) END    &kp LC(INSERT)  &kp F7  &kp F8  &kp F9  &kp F12
+                        &kp LC(A)          &mt LS(LEFT) LEFT    &mt LS(DOWN) DOWN          &mt LS(RIGHT_ARROW) RIGHT    &kp LC(Y)          &kp LC(Y)       &kp F4  &kp F5  &kp F6  &kp F11
+&mt PRINTSCREEN ESCAPE  &kp LC(Z)          &mt LC(LS(X)) LC(X)  &kp LC(C)                  &mt LS(LC(V)) LC(V)          &kp LC(B)          &kp LALT        &kp F1  &kp F2  &kp F3  &kp F10  &kp PRINTSCREEN
+                                                                &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans             &trans          &trans  &trans
             >;
         };
 
