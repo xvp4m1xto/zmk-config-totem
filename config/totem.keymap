@@ -212,19 +212,19 @@
 
         NavFN {
             bindings = <
-                 &mt LC(HOME) HOME  &mt LC(PG_UP) PG_UP  &mt LS(UP_ARROW) UP_ARROW  &mt LC(PAGE_DOWN) PAGE_DOWN  &mt LC(END) END        &kp F1               &kp F2     &kp F3     &kp F4               &mt LS(F5) F5
-                 &kp LC(A)          &mt LS(LEFT) LEFT    &mt LS(DOWN) DOWN          &mt LS(RIGHT_ARROW) RIGHT    &kp LC(Y)              &mt LS(F6) F6        &kp F7     &kp F8     &kp F9               &kp F10
-&kp PRINTSCREEN  &kp LC(Z)          &mt LC(LS(X)) LC(X)  &kp LC(C)                  &TD_Enter                    &mt LC(LS(V)) LC(V)    &mt LC(LS(V)) LC(V)  &TD_Enter  &kp LC(C)  &mt LS(LC(X)) LC(X)  &mt LS(F12) F12  &mt RMETA F11
-                                                         &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans                 &trans               &trans     &trans
+                 &mt LC(HOME) HOME  &mt LC(PG_UP) PG_UP  &mt LS(UP_ARROW) UP_ARROW  &mt LC(PAGE_DOWN) PAGE_DOWN  &mt LC(END) END        &none     &kp F7  &kp F8  &kp F9  &kp F12
+                 &kp LC(A)          &mt LS(LEFT) LEFT    &mt LS(DOWN) DOWN          &mt LS(RIGHT_ARROW) RIGHT    &kp LC(Y)              &none     &kp F4  &kp F5  &kp F6  &kp F11
+&kp PRINTSCREEN  &kp LC(Z)          &mt LC(LS(X)) LC(X)  &kp LC(C)                  &mt LS(LC(V)) LC(V)          &mt LC(LS(V)) LC(V)    &kp LALT  &kp F1  &kp F2  &kp F3  &kp F10  &none
+                                                         &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans                 &trans    &trans  &trans
             >;
         };
 
         SymNum {
             bindings = <
-                 &kp EXCLAMATION              &kp AT_SIGN                    &kp HASH                &kp DOLLAR             &kp PERCENT           &kp ASTERISK         &kp N7        &kp N8                   &kp N9        &kp SLASH
-                 &kp CARET                    &kp AMPERSAND                  &mt DOUBLE_QUOTES SQT   &mt SEMICOLON COLON    &mt QUESTION EQUAL    &kp PLUS             &kp NUMBER_4  &kp N5                   &kp NUMBER_6  &mt UNDERSCORE MINUS
-&mt TILDE GRAVE  &mt LEFT_BRACKET LEFT_BRACE  &mt RIGHT_BRACKET RIGHT_BRACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &mt PIPE BACKSLASH    &kp PLUS             &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3  &mt UNDERSCORE MINUS  &mt RIGHT_GUI KP_ENTER
-                                                                             &mt LEFT_ALT BACKSPACE  &trans                 &mt LCTRL TAB         &mt LESS_THAN COMMA  &kp N0        &mt GREATER_THAN PERIOD
+                 &kp EXCLAMATION              &kp AT_SIGN                    &kp HASH                &kp DOLLAR             &kp PERCENT           &mt K_CALCULATOR ASTERISK  &kp N7             &kp N8                   &kp N9        &mt UNDER MINUS
+                 &kp CARET                    &kp AMPERSAND                  &mt DOUBLE_QUOTES SQT   &mt SEMICOLON COLON    &mt QUESTION EQUAL    &kp PLUS                   &kp NUMBER_4       &kp N5                   &kp NUMBER_6  &kp EQUAL
+&mt TILDE GRAVE  &mt LEFT_BRACKET LEFT_BRACE  &mt RIGHT_BRACKET RIGHT_BRACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &mt PIPE BACKSLASH    &kp PLUS                   &kp NUMBER_1       &kp NUMBER_2             &kp NUMBER_3  &mt BACKSLASH SLASH  &mt KP_ENTER ENTER
+                                                                             &mt LEFT_ALT BACKSPACE  &trans                 &mt LCTRL TAB         &mt LESS_THAN COMMA        &mt LEFT_SHIFT N0  &mt GREATER_THAN PERIOD
             >;
         };
 
