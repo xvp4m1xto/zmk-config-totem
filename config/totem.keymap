@@ -336,10 +336,10 @@
         Mac_Base {
             label = "Mac_Base";
             bindings = <
-                     &kp Q       &kp W                &kp E                   &kp R                &kp T        &kp Y             &kp U                 &kp I                    &kp O             &kp P
-                     &kp A       &LeftHMR LEFT_ALT S  &LeftHMR LEFT_SHIFT D   &LeftHMR LEFT_GUI F  &kp G        &kp H             &RightHRM LEFT_GUI J  &RightHRM RIGHT_SHIFT K  &RightHRM LALT L  &kp SEMICOLON
-&mt LCTRL BACKSPACE  &mt LEFT Z  &mt UP_ARROW X       &mt DOWN C              &mt RIGHT V          &kp B        &kp N             &mt LEFT M            &mt DOWN COMMA           &mt UP_ARROW DOT  &mt RIGHT SLASH  &mt RCTRL APOS
-                                                      &mt LEFT_ALT BACKSPACE  &lt 6 SPACE          &lt 5 TAB    &mt LEFT_GUI TAB  &mt LEFT_SHIFT SPACE  &mt RIGHT_ALT DELETE
+                     &kp Q       &kp W            &kp E                  &kp R            &kp T        &kp Y         &kp U                 &kp I                    &kp O                 &kp P
+                     &kp A       &LeftHMR LGUI S  &LeftHMR LEFT_SHIFT D  &LeftHMR LALT F  &kp G        &kp H         &RightHRM LALT J      &RightHRM RIGHT_SHIFT K  &RightHRM LEFT_GUI L  &kp SEMICOLON
+&mt LCTRL BACKSPACE  &mt LEFT Z  &mt UP_ARROW X   &mt DOWN C             &mt RIGHT V      &kp B        &kp N         &mt LEFT M            &mt DOWN COMMA           &mt UP_ARROW DOT      &mt RIGHT SLASH  &mt RCTRL APOS
+                                                  &mt LGUI BACKSPACE     &lt 6 SPACE      &lt 5 TAB    &mt LALT TAB  &mt LEFT_SHIFT SPACE  &mt LGUI DELETE
             >;
         };
 
