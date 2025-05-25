@@ -36,7 +36,6 @@
         LDel {
             bindings = <&kp DELETE>;
             key-positions = <12 13>;
-            layers = <0 1 2>;
         };
 
         LCtrlDel {
@@ -48,12 +47,12 @@
         LSpace {
             bindings = <&kp SPACE>;
             key-positions = <11 12>;
-            layers = <0 2 1>;
         };
 
         LCtrlBackspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <12 11 10>;
+            layers = <0 2 1>;
         };
 
         LEnter {
@@ -69,6 +68,7 @@
         Ctrl+Alt+Del {
             bindings = <&kp LC(LA(DELETE))>;
             key-positions = <35 36 37>;
+            layers = <0 1 2>;
         };
 
         LCapsword {
@@ -89,6 +89,7 @@
         RCtrlDel {
             bindings = <&kp LC(DELETE)>;
             key-positions = <16 17 18>;
+            layers = <0 1 2>;
         };
 
         RSpace {
@@ -109,6 +110,7 @@
         RCtrlBackspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <17 18 19>;
+            layers = <0 1 2>;
         };
 
         REnter {
@@ -129,27 +131,97 @@
         CtrlUp {
             bindings = <&mt LS(LC(UP_ARROW)) LC(UP_ARROW)>;
             key-positions = <2 34>;
+            layers = <0 1 2>;
         };
 
         CtrlDown {
             bindings = <&mt LS(LC(DOWN)) LC(DOWN)>;
             key-positions = <34 12>;
+            layers = <0 1 2>;
         };
 
         CtrlLeft {
             bindings = <&mt LS(LC(LEFT_ARROW)) LC(LEFT_ARROW)>;
             key-positions = <34 11>;
+            layers = <0 1 2>;
         };
 
         CtrlRight {
             bindings = <&mt LS(LC(RIGHT_ARROW)) LC(RIGHT_ARROW)>;
             key-positions = <34 13>;
+            layers = <0 1 2>;
         };
 
         Switch_to_Mac {
             bindings = <&tog 4>;
-            key-positions = <6 7 8 9 5>;
+            key-positions = <6 7 8 35 9>;
             layers = <0>;
+        };
+
+        Switch_to_Win {
+            bindings = <&tog 0>;
+            key-positions = <6 7 8 35 9>;
+            layers = <4>;
+        };
+
+        OptDel {
+            bindings = <&kp LA(DELETE)>;
+            key-positions = <11 12 13>;
+            layers = <4 5 6>;
+        };
+
+        OptBackspace {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <12 11 10>;
+            layers = <4 5 6>;
+        };
+
+        ROptDel {
+            bindings = <&kp LA(DELETE)>;
+            key-positions = <16 17 18>;
+            layers = <4 5 6>;
+        };
+
+        ROptBackspace {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <17 18 19>;
+            layers = <4 5 6>;
+        };
+
+        CmdUp {
+            bindings = <&mt LS(LG(UP_ARROW)) LG(UP_ARROW)>;
+            key-positions = <2 34>;
+            layers = <4 5 6>;
+        };
+
+        CmdDown {
+            bindings = <&mt LS(LG(DOWN)) LG(DOWN)>;
+            key-positions = <34 12>;
+            layers = <4 5 6>;
+        };
+
+        CmdLeft {
+            bindings = <&mt LS(LG(LEFT_ARROW)) LG(LEFT_ARROW)>;
+            key-positions = <34 11>;
+            layers = <4 5 6>;
+        };
+
+        CmdRight {
+            bindings = <&mt LS(LG(RIGHT_ARROW)) LG(RIGHT_ARROW)>;
+            key-positions = <34 13>;
+            layers = <4 5 6>;
+        };
+
+        To_Adj {
+            bindings = <&to 3>;
+            key-positions = <35 27 28 29 30>;
+            layers = <0 4>;
+        };
+
+        Adj_to_Base {
+            bindings = <&to 0>;
+            key-positions = <35 27 28 29 30>;
+            layers = <3>;
         };
     };
 
