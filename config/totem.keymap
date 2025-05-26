@@ -302,10 +302,10 @@
 
         SymNumPad {
             bindings = <
-                 &kp EXCLAMATION              &kp AT_SIGN                    &kp HASH                &kp DOLLAR            &kp PERCENT              &mt K_CALCULATOR AMPERSAND  &kp N7             &kp N8                   &kp N9        &mt PIPE EQUAL
-                 &kp RA(LS(APOS))             &kp RA(LS(GRAVE))              &kp RA(GRAVE)           &kp RA(APOS)          &kp RA(NUMBER_6)         &kp PLUS                    &kp NUMBER_4       &kp N5                   &kp NUMBER_6  &mt UNDERSCORE MINUS
-&mt RA(S) GRAVE  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp RA(C)               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mt RALT ASTERISK           &kp NUMBER_1       &kp NUMBER_2             &kp NUMBER_3  &mt BACKSLASH SLASH   &mt KP_ENTER ENTER
-                                                                             &mt LEFT_ALT BACKSPACE  &trans                &mt LCTRL TAB            &mt LESS_THAN COMMA         &mt LEFT_SHIFT N0  &mt GREATER_THAN PERIOD
+                 &kp EXCLAMATION              &kp AT_SIGN                    &kp HASH                &kp DOLLAR            &kp PERCENT              &mt C_AL_CALCULATOR AMPERSAND  &kp N7             &kp N8                   &kp N9        &mt PIPE EQUAL
+                 &kp RA(LS(APOS))             &kp RA(LS(GRAVE))              &kp RA(GRAVE)           &kp RA(APOS)          &kp RA(NUMBER_6)         &kp PLUS                       &kp NUMBER_4       &kp N5                   &kp NUMBER_6  &mt UNDERSCORE MINUS
+&mt RA(S) GRAVE  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp RA(C)               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mt RALT ASTERISK              &kp NUMBER_1       &kp NUMBER_2             &kp NUMBER_3  &mt BACKSLASH SLASH   &mt KP_ENTER ENTER
+                                                                             &mt LEFT_ALT BACKSPACE  &trans                &mt LCTRL TAB            &mt LESS_THAN COMMA            &mt LEFT_SHIFT N0  &mt GREATER_THAN PERIOD
             >;
         };
 
