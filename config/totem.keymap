@@ -41,7 +41,7 @@
         LCtrlDel {
             bindings = <&kp LC(DELETE)>;
             key-positions = <11 12 13>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         LSpace {
@@ -52,7 +52,7 @@
         LCtrlBackspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <12 11 10>;
-            layers = <0 2 1>;
+            layers = <0 2 1 3>;
         };
 
         LEnter {
@@ -68,7 +68,7 @@
         Ctrl+Alt+Del {
             bindings = <&kp LC(LA(DELETE))>;
             key-positions = <35 36 37>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         LCapsword {
@@ -89,7 +89,7 @@
         RCtrlDel {
             bindings = <&kp LC(DELETE)>;
             key-positions = <16 17 18>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         RSpace {
@@ -110,7 +110,7 @@
         RCtrlBackspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <17 18 19>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         REnter {
@@ -131,25 +131,25 @@
         CtrlUp {
             bindings = <&mt LS(LC(UP_ARROW)) LC(UP_ARROW)>;
             key-positions = <2 34>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         CtrlDown {
             bindings = <&mt LS(LC(DOWN)) LC(DOWN)>;
             key-positions = <34 12>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         CtrlLeft {
             bindings = <&mt LS(LC(LEFT_ARROW)) LC(LEFT_ARROW)>;
             key-positions = <34 11>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         CtrlRight {
             bindings = <&mt LS(LC(RIGHT_ARROW)) LC(RIGHT_ARROW)>;
             key-positions = <34 13>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         Switch_to_Mac {
@@ -167,53 +167,53 @@
         OptDel {
             bindings = <&kp LA(DELETE)>;
             key-positions = <11 12 13>;
-            layers = <4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         OptBackspace {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <12 11 10>;
-            layers = <4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         ROptDel {
             bindings = <&kp LA(DELETE)>;
             key-positions = <16 17 18>;
-            layers = <4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         ROptBackspace {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 18 19>;
-            layers = <4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         CmdUp {
             bindings = <&mt LS(LG(UP_ARROW)) LG(UP_ARROW)>;
             key-positions = <2 34>;
-            layers = <4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         CmdDown {
             bindings = <&mt LS(LG(DOWN)) LG(DOWN)>;
             key-positions = <34 12>;
-            layers = <4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         CmdLeft {
             bindings = <&mt LS(LG(LEFT_ARROW)) LG(LEFT_ARROW)>;
             key-positions = <34 11>;
-            layers = <4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         CmdRight {
             bindings = <&mt LS(LG(RIGHT_ARROW)) LG(RIGHT_ARROW)>;
             key-positions = <34 13>;
-            layers = <4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         To_Adj {
-            bindings = <&to 3>;
+            bindings = <&to 8>;
             key-positions = <35 27 28 29 30>;
             layers = <0 4>;
         };
@@ -221,7 +221,7 @@
         Adj_to_Base {
             bindings = <&to 0>;
             key-positions = <35 27 28 29 30>;
-            layers = <3>;
+            layers = <8>;
         };
     };
 
@@ -286,7 +286,7 @@
             bindings = <
                      &kp Q       &kp W                &kp E                   &kp R             &kp T        &kp Y          &kp U                 &kp I                    &kp O             &kp P
                      &kp A       &LeftHMR LEFT_ALT S  &LeftHMR LEFT_SHIFT D   &LeftHMR LCTRL F  &kp G        &kp H          &RightHRM RCTRL J     &RightHRM RIGHT_SHIFT K  &RightHRM LALT L  &kp SEMICOLON
-&mt LEFT_GUI ESCAPE  &mt LEFT Z  &mt UP_ARROW X       &mt DOWN C              &mt RIGHT V       &kp B        &kp N          &mt LEFT M            &mt DOWN COMMA           &mt UP_ARROW DOT  &mt RIGHT SLASH  &mt RALT APOS
+&mt LEFT_GUI ESCAPE  &mt LEFT Z  &mt UP_ARROW X       &mt DOWN C              &mt RIGHT V       &lt 3 B      &lt 3 N        &mt LEFT M            &mt DOWN COMMA           &mt UP_ARROW DOT  &mt RIGHT SLASH  &mt RALT APOS
                                                       &mt LEFT_ALT BACKSPACE  &lt 2 SPACE       &lt 1 TAB    &mt RCTRL TAB  &mt LEFT_SHIFT SPACE  &mt RIGHT_ALT DELETE
             >;
         };
@@ -300,12 +300,57 @@
             >;
         };
 
-        SymNum {
+        SymNumPad {
             bindings = <
                  &kp EXCLAMATION              &kp AT_SIGN                    &kp HASH                &kp DOLLAR            &kp PERCENT              &mt K_CALCULATOR AMPERSAND  &kp N7             &kp N8                   &kp N9        &mt PIPE EQUAL
                  &kp RA(LS(APOS))             &kp RA(LS(GRAVE))              &kp RA(GRAVE)           &kp RA(APOS)          &kp RA(NUMBER_6)         &kp PLUS                    &kp NUMBER_4       &kp N5                   &kp NUMBER_6  &mt UNDERSCORE MINUS
 &mt RA(S) GRAVE  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp RA(C)               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mt RALT ASTERISK           &kp NUMBER_1       &kp NUMBER_2             &kp NUMBER_3  &mt BACKSLASH SLASH   &mt KP_ENTER ENTER
                                                                              &mt LEFT_ALT BACKSPACE  &trans                &mt LCTRL TAB            &mt LESS_THAN COMMA         &mt LEFT_SHIFT N0  &mt GREATER_THAN PERIOD
+            >;
+        };
+
+        NumLandR {
+            bindings = <
+                     &mt EXCL NUMBER_1    &mt AT NUMBER_2   &mt HASH NUMBER_3       &mt DOLLAR NUMBER_4      &mt PERCENT N5              &mt EXCL NUMBER_1   &mt AT NUMBER_2       &mt HASH NUMBER_3    &mt DOLLAR NUMBER_4      &mt PERCENT N5
+                     &mt CARET NUMBER_6   &mt AMPERSAND N7  &mt ASTERISK N8         &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0    &mt CARET NUMBER_6  &mt AMPERSAND N7      &mt ASTERISK N8      &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0
+&mt EQUAL BACKSPACE  &mt BACKSLASH SLASH  &kp ASTERISK      &kp PLUS                &mt UNDER MINUS          &trans                      &trans              &mt UNDER MINUS       &kp PLUS             &kp ASTERISK             &mt BACKSLASH SLASH       &mt EQUAL DEL
+                                                            &mt LEFT_ALT BACKSPACE  &mt LEFT_SHIFT SPACE     &mt LCTRL TAB               &mt LCTRL TAB       &mt LEFT_SHIFT SPACE  &mt LEFT_ALT DELETE
+            >;
+        };
+
+        Base_Mac {
+            bindings = <
+                  &kp Q       &kp W            &kp E                  &kp R            &kp T        &kp Y         &kp U                 &kp I                    &kp O                 &kp P
+                  &kp A       &LeftHMR LGUI S  &LeftHMR LEFT_SHIFT D  &LeftHMR LALT F  &kp G        &kp H         &RightHRM LALT J      &RightHRM RIGHT_SHIFT K  &RightHRM LEFT_GUI L  &kp SEMICOLON
+&mt LCTRL ESCAPE  &mt LEFT Z  &mt UP_ARROW X   &mt DOWN C             &mt RIGHT V      &lt 7 B      &lt 7 N       &mt LEFT M            &mt DOWN COMMA           &mt UP_ARROW DOT      &mt RIGHT SLASH  &mt RCTRL APOS
+                                               &mt LGUI BACKSPACE     &lt 6 SPACE      &lt 5 TAB    &mt LALT TAB  &mt LEFT_SHIFT SPACE  &mt LGUI DELETE
+            >;
+        };
+
+        NavFN_Mac {
+            bindings = <
+                        &mt LG(HOME) HOME  &mt LG(PG_UP) PG_UP  &mt LS(UP_ARROW) UP_ARROW  &mt LG(PAGE_DOWN) PAGE_DOWN  &mt LG(END) END    &kp LC(INSERT)  &kp F7  &kp F8  &kp F9  &kp F12
+                        &kp LG(A)          &mt LS(LEFT) LEFT    &mt LS(DOWN) DOWN          &mt LS(RIGHT_ARROW) RIGHT    &kp LG(Y)          &kp LG(Y)       &kp F4  &kp F5  &kp F6  &kp F11
+&mt PRINTSCREEN ESCAPE  &kp LG(Z)          &mt LS(LG(X)) LG(X)  &kp LG(C)                  &mt LC(LG(V)) LG(V)          &kp LG(B)          &kp LALT        &kp F1  &kp F2  &kp F3  &kp F10  &mt PRINTSCREEN ESCAPE
+                                                                &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans             &trans          &trans  &trans
+            >;
+        };
+
+        SymNumPad_Mac {
+            bindings = <
+                     &kp EXCLAMATION               &kp AT_SIGN                    &kp HASH                &kp DOLLAR            &kp PERCENT              &mt K_CALCULATOR AMPERSAND  &kp N7             &kp N8                   &kp N9        &mt PIPE EQUAL
+                     &mt RA(S) RA(LS(APOSTROPHE))  &kp RA(LS(GRAVE))              &kp RA(GRAVE)           &kp RA(APOS)          &kp RA(NUMBER_6)         &kp PLUS                    &kp NUMBER_4       &kp N5                   &kp NUMBER_6  &mt UNDERSCORE MINUS
+&mt RA(GRAVE) GRAVE  &mt LEFT_BRACE LEFT_BRACKET   &mt RIGHT_BRACE RIGHT_BRACKET  &kp RA(C)               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mt RALT ASTERISK           &kp NUMBER_1       &kp NUMBER_2             &kp NUMBER_3  &mt BACKSLASH SLASH   &mt KP_ENTER ENTER
+                                                                                  &mt LEFT_ALT BACKSPACE  &trans                &mt LCTRL TAB            &mt LESS_THAN COMMA         &mt LEFT_SHIFT N0  &mt GREATER_THAN PERIOD
+            >;
+        };
+
+        NumLandR_Mac {
+            bindings = <
+                     &mt EXCL NUMBER_1    &mt AT NUMBER_2   &mt HASH NUMBER_3       &mt DOLLAR NUMBER_4      &mt PERCENT N5              &mt EXCL NUMBER_1   &mt AT NUMBER_2       &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4      &mt PERCENT N5
+                     &mt CARET NUMBER_6   &mt AMPERSAND N7  &mt ASTERISK N8         &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0    &mt CARET NUMBER_6  &mt AMPERSAND N7      &mt ASTERISK N8    &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0
+&mt EQUAL BACKSPACE  &mt BACKSLASH SLASH  &kp ASTERISK      &kp PLUS                &mt UNDER MINUS          &trans                      &trans              &mt UNDER MINUS       &kp PLUS           &kp ASTERISK             &mt BACKSLASH SLASH       &mt EQUAL DEL
+                                                            &mt LEFT_WIN BACKSPACE  &mt LEFT_SHIFT SPACE     &mt LEFT_ALT TAB            &mt LEFT_ALT TAB    &mt LEFT_SHIFT SPACE  &mt LCMD DELETE
             >;
         };
 
@@ -330,34 +375,6 @@
               &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4     &none       &none  &none  &none  &none
 &out OUT_TOG  &out OUT_USB   &out OUT_BLE   &bt BT_CLR     &bt BT_PRV     &bt BT_NXT        &none       &none  &none  &none  &none  &bootloader
                                             &none          &none          &bt BT_CLR_ALL    &none       &none  &none
-            >;
-        };
-
-        Mac_Base {
-            label = "Mac_Base";
-            bindings = <
-                  &kp Q       &kp W            &kp E                  &kp R            &kp T        &kp Y         &kp U                 &kp I                    &kp O                 &kp P
-                  &kp A       &LeftHMR LGUI S  &LeftHMR LEFT_SHIFT D  &LeftHMR LALT F  &kp G        &kp H         &RightHRM LALT J      &RightHRM RIGHT_SHIFT K  &RightHRM LEFT_GUI L  &kp SEMICOLON
-&mt LCTRL ESCAPE  &mt LEFT Z  &mt UP_ARROW X   &mt DOWN C             &mt RIGHT V      &kp B        &kp N         &mt LEFT M            &mt DOWN COMMA           &mt UP_ARROW DOT      &mt RIGHT SLASH  &mt RCTRL APOS
-                                               &mt LGUI BACKSPACE     &lt 6 SPACE      &lt 5 TAB    &mt LALT TAB  &mt LEFT_SHIFT SPACE  &mt LGUI DELETE
-            >;
-        };
-
-        NavFN_Mac {
-            bindings = <
-                        &mt LG(HOME) HOME  &mt LG(PG_UP) PG_UP  &mt LS(UP_ARROW) UP_ARROW  &mt LG(PAGE_DOWN) PAGE_DOWN  &mt LG(END) END    &kp LC(INSERT)  &kp F7  &kp F8  &kp F9  &kp F12
-                        &kp LG(A)          &mt LS(LEFT) LEFT    &mt LS(DOWN) DOWN          &mt LS(RIGHT_ARROW) RIGHT    &kp LG(Y)          &kp LG(Y)       &kp F4  &kp F5  &kp F6  &kp F11
-&mt PRINTSCREEN ESCAPE  &kp LG(Z)          &mt LS(LG(X)) LG(X)  &kp LG(C)                  &mt LC(LG(V)) LG(V)          &kp LG(B)          &kp LALT        &kp F1  &kp F2  &kp F3  &kp F10  &mt PRINTSCREEN ESCAPE
-                                                                &mt LEFT_ALT BACKSPACE     &mt LEFT_SHIFT SPACE         &trans             &trans          &trans  &trans
-            >;
-        };
-
-        SymNum_Mac {
-            bindings = <
-                     &kp EXCLAMATION               &kp AT_SIGN                    &kp HASH                &kp DOLLAR            &kp PERCENT              &mt K_CALCULATOR AMPERSAND  &kp N7             &kp N8                   &kp N9        &mt PIPE EQUAL
-                     &mt RA(S) RA(LS(APOSTROPHE))  &kp RA(LS(GRAVE))              &kp RA(GRAVE)           &kp RA(APOS)          &kp RA(NUMBER_6)         &kp PLUS                    &kp NUMBER_4       &kp N5                   &kp NUMBER_6  &mt UNDERSCORE MINUS
-&mt RA(GRAVE) GRAVE  &mt LEFT_BRACE LEFT_BRACKET   &mt RIGHT_BRACE RIGHT_BRACKET  &kp RA(C)               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mt RALT ASTERISK           &kp NUMBER_1       &kp NUMBER_2             &kp NUMBER_3  &mt BACKSLASH SLASH   &mt KP_ENTER ENTER
-                                                                                  &mt LEFT_ALT BACKSPACE  &trans                &mt LCTRL TAB            &mt LESS_THAN COMMA         &mt LEFT_SHIFT N0  &mt GREATER_THAN PERIOD
             >;
         };
     };
